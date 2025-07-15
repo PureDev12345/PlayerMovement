@@ -9,3 +9,5 @@ this script is made to add to the player object, it allows for easy movement of 
 2: Creata charcter controller and add it to the playermovement script.<br>
 3: Make sure to adjust spead and gravity to requirments.<br>
 4: create an empty and put it at the lower end of the player and assign it as the ground checker.<br>
+5: In the mouse look scrip, add the camer.
+6 assign ground layer to the ground.
