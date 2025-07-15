@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class playermovement : MonoBehaviour
 {
-    public LayerMask Log;
-
-    public GameObject Logs;
-
     public CharacterController controller;
 
     public float speed = 12f;
@@ -19,20 +15,13 @@ public class playermovement : MonoBehaviour
     public float grounddistance = 0.4f;
     public float jumpheight = 5f;
 
-    bool isGrounded, ispicking1;
+    bool isGrounded;
 
     Vector3 velocity;
 
     // Update is called once per frame
     void Update()
     {
-        ispicking1 = Physics.CheckSphere(groundcheck.position, grounddistance, Log);
-
-        if (ispicking1)
-        {
-            Destroy(Logs, 0f);
-        }
-
         isGrounded = Physics.CheckSphere(groundcheck.position, grounddistance, ground);
 
         if (isGrounded && velocity.y < 0)
